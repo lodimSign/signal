@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #1F3A5F;
+  --color-bg: #F4F6F8;
+  --color-surface: #FFFFFF;
+  --color-text: #1B2735;
+  --color-muted: #667384;
+  --color-line: #E1E7ED;
+  --radius: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: var(--color-bg); font-size: 16px; line-height: 1.7; word-break: keep-all; }
+.topbar { height: 64px; background: var(--color-primary); }
+.topbar a { display: flex; align-items: center; max-width: 780px; height: 100%; margin: 0 auto; padding: 0 24px; color: #fff; font-size: 18px; font-weight: 800; letter-spacing: -0.03em; text-decoration: none; }
+nav[aria-label="안내"] { width: min(100%, 780px); margin: 0 auto; padding: 16px 24px 0; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14px; }
+nav[aria-label="안내"] a { color: var(--color-muted); text-decoration: none; }
+nav[aria-label="안내"] a:hover { text-decoration: underline; }
+nav[aria-label="안내"] a[aria-current="page"] { color: var(--color-primary); font-weight: 800; }
+main { width: min(100%, 780px); margin: 0 auto; padding: 16px 16px 56px; }
+article { background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--radius); box-shadow: 0 6px 16px rgba(31,58,95,.06); padding: 24px; overflow-wrap: break-word; }
+h1 { margin: 0 0 16px; font-size: 24px; line-height: 1.4; letter-spacing: -0.04em; }
+h2 { margin: 24px 0 8px; font-size: 18px; line-height: 1.4; }
+p { margin: 0 0 16px; }
+ul { margin: 0 0 16px; padding-left: 20px; }
+li { margin-bottom: 4px; }
+a { color: var(--color-primary); }
+.table-scroll { overflow-x: auto; margin: 0 0 16px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; line-height: 1.5; }
+th, td { border: 1px solid var(--color-line); padding: 8px 12px; text-align: left; vertical-align: top; }
+th { background: #FAFBFC; white-space: nowrap; }
+@media (min-width: 640px) { main { padding-top: 24px; } article { padding: 32px; } }
