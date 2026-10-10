@@ -31,3 +31,5 @@ table { border-collapse: collapse; width: 100%; font-size: 14px; line-height: 1.
 th, td { border: 1px solid var(--color-line); padding: 8px 12px; text-align: left; vertical-align: top; }
 th { background: #FAFBFC; white-space: nowrap; }
 @media (min-width: 640px) { main { padding-top: 24px; } article { padding: 32px; } }
+hr { border: 0; border-top: 1px solid var(--color-line); margin: 32px 0 24px; }
+.cta { display: inline-block; padding: 12px 20px; border-radius: var(--radius); background: var(--color-primary); color: #fff; font-weight: 800; text-decoration: none; }
